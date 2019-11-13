@@ -1,0 +1,69 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 908">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 5;
+      }
+    </style>
+  </defs>
+  <title>timeline</title>
+  <g id="Ellipse_1" data-name="Ellipse 1">
+    <circle class="cls-1" cx="22.5" cy="22.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="22.5" r="20.5"/>
+  </g>
+  <line id="Line_1" data-name="Line 1" class="cls-3" x1="22.5" y1="43.5" x2="22.5" y2="80.5"/>
+  <line id="Line_1-2" data-name="Line 1" class="cls-3" x1="22.5" y1="122.5" x2="22.5" y2="169.5"/>
+  <line id="Line_8" data-name="Line 8" class="cls-3" x1="22.5" y1="332.5" x2="22.5" y2="374.5"/>
+  <line id="Line_15" data-name="Line 15" class="cls-3" x1="22.5" y1="622.5" x2="22.5" y2="664.5"/>
+  <line id="Line_13" data-name="Line 13" class="cls-3" x1="22.5" y1="416.5" x2="22.5" y2="458.5"/>
+  <line id="Line_16" data-name="Line 16" class="cls-3" x1="22.5" y1="706.5" x2="22.5" y2="748.5"/>
+  <line id="Line_9" data-name="Line 9" class="cls-3" x1="22.5" y1="211.5" x2="22.5" y2="292.5"/>
+  <line id="Line_17" data-name="Line 17" class="cls-3" x1="22.5" y1="501.5" x2="22.5" y2="581.5"/>
+  <line id="Line_14" data-name="Line 14" class="cls-3" x1="22.5" y1="789.5" x2="22.5" y2="869.5"/>
+  <g id="Ellipse_4" data-name="Ellipse 4">
+    <circle class="cls-1" cx="22.5" cy="191.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="191.5" r="20.5"/>
+  </g>
+  <g id="Ellipse_3" data-name="Ellipse 3">
+    <circle class="cls-1" cx="22.5" cy="101.5" r="21.5"/>
+    <circle class="cls-1" cx="22.5" cy="101.5" r="20.5"/>
+  </g>
+  <g id="Ellipse_13" data-name="Ellipse 13">
+    <circle class="cls-1" cx="22.5" cy="885.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="885.5" r="20.5"/>
+  </g>
+  <g id="Ellipse_5" data-name="Ellipse 5">
+    <circle class="cls-1" cx="22.5" cy="312.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="312.5" r="20.5"/>
+  </g>
+  <g id="Ellipse_12" data-name="Ellipse 12">
+    <circle class="cls-1" cx="22.5" cy="602.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="602.5" r="20.5"/>
+  </g>
+  <g id="Ellipse_6" data-name="Ellipse 6">
+    <circle class="cls-1" cx="22.5" cy="395.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="395.5" r="20.5"/>
+  </g>
+  <g id="Ellipse_11" data-name="Ellipse 11">
+    <circle class="cls-1" cx="22.5" cy="685.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="685.5" r="20.5"/>
+  </g>
+  <g id="Ellipse_9" data-name="Ellipse 9">
+    <circle class="cls-1" cx="22.5" cy="479.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="479.5" r="20.5"/>
+  </g>
+  <g id="Ellipse_10" data-name="Ellipse 10">
+    <circle class="cls-1" cx="22.5" cy="769.5" r="21.5"/>
+    <circle class="cls-2" cx="22.5" cy="769.5" r="20.5"/>
+  </g>
+</svg>
