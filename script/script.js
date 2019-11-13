@@ -5,5 +5,5 @@ fetch("timeline.svg")
   .then(data => loadSVG(data));
 
 function loadSVG(data) {
-  document.querySelector(".theSVG").innerHTML = data;
+  document.querySelector(".SVG_timeline").innerHTML = data;
 }

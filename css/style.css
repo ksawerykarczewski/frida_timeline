@@ -31,6 +31,8 @@ body {
   background-color: var(--main-bg-color);
   color: var(--text-color);
 }
+/* main {
+} */
 
 /* NAVIGATION */
 
@@ -44,6 +46,7 @@ body {
   float: right;
   width: 70px;
   margin: 3em;
+  opacity: 0.7;
 }
 
 .topnav img:hover {
@@ -67,7 +70,7 @@ body {
 
 /* TIMELINE */
 
-.theSVG svg {
+.SVG_timeline svg {
   height: 90%;
   background-color: transparent;
   position: fixed;
@@ -75,6 +78,13 @@ body {
   left: 7%;
   transform: translate(-50%, -50%);
 }
-.theSVG svg {
+.SVG_timeline svg:hover {
   cursor: pointer;
+}
+
+section.point {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 50% auto auto auto;
+  padding: 2em;
 }
