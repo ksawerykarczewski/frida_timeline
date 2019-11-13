@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148.98 106.11">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 13px;
+      }
+    </style>
+  </defs>
+  <title>menu_icon_2</title>
+  <g id="Group_4" data-name="Group 4" class="cls-1">
+    <line id="Line_4" data-name="Line 4" class="cls-2" y1="6.5" x2="148.98" y2="6.5"/>
+    <line id="Line_5" data-name="Line 5" class="cls-2" y1="53.06" x2="148.98" y2="53.06"/>
+    <line id="Line_6" data-name="Line 6" class="cls-2" y1="99.61" x2="74.49" y2="99.61"/>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap");
+*,
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Crimson Pro", serif;
+}
+:root {
+  --main-bg-color: rgb(228, 228, 228);
+  --text-color: #000;
+  --special-color: gold;
+  --grey: rgba(88, 88, 88, 0.479);
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* MAIN */
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+/* NAVIGATION */
+
+.topnav {
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+}
+.topnav img {
+  float: right;
+  width: 70px;
+  margin: 3em;
+}
+
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2.4em;
+  display: inline-block;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+} */
