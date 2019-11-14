@@ -85,7 +85,7 @@ section.point_section {
   top: 50%;
   left: 7%;
   transform: translate(-50%, -50%);
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .SVG_timeline svg:hover {
