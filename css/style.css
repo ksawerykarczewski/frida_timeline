@@ -149,6 +149,10 @@ img.bg {
   left: 0;
 }
 
+img.painting {
+  width: 100%;
+}
+
 img.point_img {
   width: 100%;
 }
@@ -183,6 +187,14 @@ main section:nth-child(even) .text p {
   position: absolute;
   bottom: -50%;
   left: 0;
+}
+
+.quote {
+  opacity: 0.5;
+  grid-column: 1 / span 2;
+  font-size: 30px;
+  padding: 2em;
+  text-align: justify;
 }
 
 /* HEADINGS and P's */
