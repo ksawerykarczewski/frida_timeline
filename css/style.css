@@ -70,7 +70,7 @@ section.point_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5%;
-  padding: 10px;
+  padding: 30px 10px;
   padding-bottom: 10%;
 }
 
@@ -116,7 +116,7 @@ section.point_section {
   top: 50%;
   left: 7%;
   transform: translate(-50%, -50%);
-  /* opacity: 0.5; */
+  opacity: 0.5;
 }
 
 .SVG_timeline svg:hover {
@@ -195,6 +195,87 @@ main section:nth-child(even) .text p {
   font-size: 30px;
   padding: 2em;
   text-align: justify;
+}
+/* MODAL */
+
+.hide {
+  display: none;
+}
+
+.modal-bg {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  z-index: 9999;
+}
+/* .close-btn {
+  display: inline-block;
+  content: "\00d7";
+
+} */
+
+.modal-content {
+  /* margin: 0 auto; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-bg ul li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+  line-height: 10px;
+  padding: 1em;
+}
+
+.modal-bg ul li p {
+  text-align: left;
+}
+
+.modal-bg ul li p:hover {
+  opacity: 0.6;
+}
+
+.modal-bg svg {
+  /* width: 10%; 
+  height: 50px;
+  position: relative;
+  right: 0px;
+  bottom: 0px;*/
+  max-height: 90%;
+  margin: 0 auto;
+}
+
+.close-btn {
+  cursor: pointer;
+}
+.close-btn:after,
+.close-btn:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-top: 1px solid #000;
+  position: absolute;
+  top: 7px;
+  right: -8px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.close-btn:before {
+  right: 6px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* HEADINGS and P's */
