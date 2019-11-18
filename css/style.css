@@ -81,14 +81,20 @@ section.point_section {
   width: 100%;
   height: 100px;
   position: fixed;
+  z-index: 15;
 }
-.topnav img {
+/* .topnav img  */
+
+#bm {
   float: right;
-  width: 50px;
-  margin: 3em;
+  /* width: 100%; */
+  height: 80%;
+  /* margin: 3em;*/
+  padding-top: 1em;
+  opacity: 0.6;
 }
 
-.topnav img:hover {
+.topnav #bm:hover {
   cursor: pointer;
 }
 
@@ -211,10 +217,12 @@ ul {
   width: 100vw;
   position: fixed;
   top: 0;
-  background-color: var(--main-bg-color);
   color: var(--text-color);
-  z-index: 9999;
+  z-index: 10;
+  transition: unfoldIn 0.5s ease-in;
+  background-color: var(--main-bg-color);
 }
+
 /* .close-btn {
   display: inline-block;
   content: "\00d7";

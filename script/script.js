@@ -173,13 +173,27 @@ function main() {
   categories.forEach(cat => {
     cat.addEventListener("click", scrollToSection);
   });
+  document.querySelector("#bm").addEventListener("click", toggleModal);
+}
 
-  document.querySelector(".close-btn").addEventListener("click", hideModal);
-  document.querySelector(".topnav img").addEventListener("click", showModal);
+function toggleModal() {
+  if (modal.classList.contains("hide")) {
+    modal.classList.remove("hide");
+    burger_animation.play();
+  } else {
+    modal.classList.add("hide");
+    // burger_animation.gotoAndStop(1);
+    burger_animation.setDirection(-1);
+    burger_animation.play();
+  }
 }
-function hideModal() {
-  modal.classList.add("hide");
-}
-function showModal() {
-  modal.classList.remove("hide");
-}
+
+let burger_animation = lottie.loadAnimation({
+  container: document.querySelector("#bm"), // the dom element that will contain the animation
+  renderer: "svg",
+  loop: false,
+  autoplay: false,
+  path: "data_menu.json" // the path to the animation json
+});
+
+burger_animation.setSpeed(2.1);

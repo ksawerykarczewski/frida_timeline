@@ -12,7 +12,8 @@
   <body>
     <header>
       <nav class="topnav">
-        <img src="imgs/menu_icon.svg" />
+        <!-- <img src="imgs/menu_icon.svg" /> -->
+        <div id="bm"></div>
       </nav>
     </header>
 
@@ -57,11 +58,11 @@
 
     <div class="modal-bg hide">
       <nav class="topnav">
-        <img class="close-btn" src="imgs/close_icon.svg" />
+        <figure class="bm_close">
+          <div id="bm"></div>
+        </figure>
       </nav>
-      <!-- <span class="close-btn"></span> -->
       <div class="modal-content">
-        <!-- <button class="close-btn">X</button> -->
         <ul></ul>
       </div>
     </div>
@@ -69,6 +70,7 @@
     <footer></footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script/lottie_menu.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>
