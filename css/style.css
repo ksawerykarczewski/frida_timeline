@@ -202,6 +202,10 @@ main section:nth-child(even) .text p {
   display: none;
 }
 
+ul {
+  height: 100%;
+}
+
 .modal-bg {
   height: 100vh;
   width: 100vw;
