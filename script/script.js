@@ -4,61 +4,6 @@
 //   duration: 1200
 // });
 
-// fetch("timeline.svg")
-//   .then(e => e.text())
-//   .then(data => loadSVG(data));
-
-// function loadSVG(data) {
-//   document.querySelector(".SVG_timeline").innerHTML = data;
-//   main();
-// }
-
-// function main() {
-//   const elms = document.querySelectorAll("section");
-//   const date = document.querySelector("#date_vertical");
-
-//   const config = {
-//     root: null, //document.querySelector('#some-element')
-//     rootMargin: "0px",
-//     threshold: [0, 0.5, 0.75, 1]
-//   };
-
-//   let observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       let lastChar = entry.target.id[entry.target.id.length - 1];
-//       let currentDate = entry.target.querySelector(".date").textContent;
-//       let currentYear = currentDate.substring(currentDate.length - 4);
-//       if (entry.intersectionRatio > 0.35) {
-//         // entry.target.classList.add("focus");
-//         document.querySelector("#circle" + lastChar).style.fill = "black";
-//         date.innerHTML = currentYear;
-//         // date.dataset.dataAos = "fade-in";
-
-//         // date.innerHTML = `data-aos="fade-down"`;
-//       } else {
-//         // entry.target.classList.remove("focus");
-//         document.querySelector("#circle" + lastChar).style.fill = "var(--main-bg-color)";
-//       }
-//     });
-//   }, config);
-
-//   elms.forEach(elem => {
-//     observer.observe(elem);
-//   });
-//   let circles = document.querySelectorAll("circle");
-//   circles.forEach(circle => {
-//     circle.addEventListener("click", scrollToSection);
-//   });
-
-//   function scrollToSection(e) {
-//     let lastCharId = e.target.id[e.target.id.length - 1];
-//     let currentSection = document.querySelector("#section" + lastCharId);
-//     currentSection.scrollIntoView({
-//       block: "start"
-//     });
-//   }
-// }
-
 const link = "https://spreadsheets.google.com/feeds/list/1RFOqG5y5zjhd7gwNB5fC9Wgw-XaPf4PjEMYlEBaOj-M/od6/public/values?alt=json";
 const template = document.querySelector("template").content;
 let counter = 1;
@@ -161,6 +106,8 @@ function main() {
   function scrollToSection(e) {
     if (!modal.classList.contains("hide")) {
       modal.classList.add("hide");
+      burger_animation.setDirection(-1);
+      burger_animation.play();
     }
     let lastCharId = e.target.id[e.target.id.length - 1];
     let currentSection = document.querySelector("#section" + lastCharId);
@@ -179,10 +126,10 @@ function main() {
 function toggleModal() {
   if (modal.classList.contains("hide")) {
     modal.classList.remove("hide");
+    burger_animation.setDirection(1);
     burger_animation.play();
   } else {
     modal.classList.add("hide");
-    // burger_animation.gotoAndStop(1);
     burger_animation.setDirection(-1);
     burger_animation.play();
   }
@@ -194,6 +141,14 @@ let burger_animation = lottie.loadAnimation({
   loop: false,
   autoplay: false,
   path: "data_menu.json" // the path to the animation json
+});
+
+let grave_animation = lottie.loadAnimation({
+  container: document.querySelector("#grave"), // the dom element that will contain the animation
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "grave2.json" // the path to the animation json
 });
 
 burger_animation.setSpeed(2.1);
