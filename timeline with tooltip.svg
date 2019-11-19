@@ -1,0 +1,72 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.26 565.56">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-11, .cls-13, .cls-18, .cls-2, .cls-20, .cls-24, .cls-25, .cls-3, .cls-4, .cls-7, .cls-8, .cls-9 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #ededed;
+      }
+
+      .cls-11, .cls-13, .cls-18, .cls-20, .cls-24, .cls-25, .cls-3, .cls-4, .cls-7, .cls-8, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke-width: 0.69px;
+      }
+
+      .cls-4 {
+        stroke-width: 0.74px;
+      }
+
+      text {
+        isolation: isolate;
+        font-size: 10px;
+        font-family: LibreBaskerville-Regular, Libre Baskerville;
+      }
+
+      .cls-7 {
+        stroke-width: 0.69px;
+      }
+    </style>
+  </defs>
+  <title>timeline with tooltip</title>
+  <line class="cls-1" x1="11.3" y1="11.54" x2="11.3" y2="554.04"/>
+  <circle id="circle1" class="cls-2" cx="11.3" cy="11.54" r="10.8"/>
+  <circle id="circle2" class="cls-2" cx="11.3" cy="67.04" r="10.8"/>
+  <circle id="circle3" class="cls-2" cx="11.3" cy="161.94" r="10.8"/>
+  <circle id="circle4" class="cls-2" cx="11.3" cy="193.34" r="10.8"/>
+  <circle id="circle5" class="cls-2" cx="11.3" cy="236.74" r="10.8"/>
+  <circle id="circle6" class="cls-2" cx="11.3" cy="269.44" r="10.8"/>
+  <circle id="circle7" class="cls-2" cx="11.3" cy="350.44" r="10.8"/>
+  <circle id="circle8" class="cls-2" cx="11.3" cy="382.24" r="10.8"/>
+  <circle id="circle9" class="cls-2" cx="11.3" cy="437.04" r="10.8"/>
+  <circle id="circle0" class="cls-2" cx="11.3" cy="554.04" r="10.8"/>
+  <path  class="path1 cls-3" d="M110.38,22.74H31.08c-1.4,0-2.53-1.6-2.53-3.5v-4.8L22.75,12c1.93-1.1,3.86-2.3,5.8-3.4V3.84c0-1.9,1.13-3.5,2.53-3.5h79.3c1.4,0,2.53,1.6,2.53,3.5v15.4C112.84,21.14,111.71,22.74,110.38,22.74Z"/>
+  <text class="svgtext1" transform="translate(54.06 15.82)">birth</text>
+  <path  class="path2 cls-7" d="M110.38,78.24H31.08c-1.4,0-2.53-1.6-2.53-3.5v-4.8l-5.8-2.4c1.93-1.1,3.86-2.3,5.8-3.4v-4.8c0-1.9,1.13-3.5,2.53-3.5h79.3c1.4,0,2.53,1.6,2.53,3.5v15.4C112.84,76.64,111.71,78.24,110.38,78.24Z"/>
+  <text class="svgtext2" transform="translate(54.06 71.32)">polio</text>
+  <path class="path3 cls-8" d="M133.42,173.14H33.29a3.38,3.38,0,0,1-3.2-3.5v-4.8l-7.32-2.4c2.44-1.1,4.88-2.3,7.32-3.4v-4.8a3.38,3.38,0,0,1,3.2-3.5H133.42a3.38,3.38,0,0,1,3.19,3.5v15.4A3.49,3.49,0,0,1,133.42,173.14Z"/>
+  <text class="svgtext3" transform="translate(46.3 166.22)">bus accident</text>
+  <path class="path4 cls-9" d="M149.49,204.54H35.91a3.58,3.58,0,0,1-3.63-3.5v-4.8l-8.3-2.4c2.77-1.1,5.53-2.3,8.3-3.4v-4.8a3.58,3.58,0,0,1,3.63-3.5H149.49a3.58,3.58,0,0,1,3.62,3.5V201A3.71,3.71,0,0,1,149.49,204.54Z"/>
+  <text class="svgtext4" transform="translate(49.44 197.62)">starts painting</text>
+  <path class="path5 cls-11" d="M194.08,247.94H40.15c-2.72,0-4.92-1.6-4.92-3.5v-4.8L24,237.24c3.75-1.1,7.5-2.3,11.25-3.4V229c0-1.9,2.2-3.5,4.92-3.5H194.08c2.72,0,4.92,1.6,4.92,3.5v15.4C198.87,246.34,196.67,247.94,194.08,247.94Z"/>
+  <text class="svgtext5" transform="translate(49.44 241.02)">joins communist party</text>
+  <path class="path6 cls-13" d="M153.77,280.64H36.31a3.65,3.65,0,0,1-3.75-3.5v-4.8L24,269.94c2.86-1.1,5.72-2.3,8.58-3.4v-4.8a3.65,3.65,0,0,1,3.75-3.5H153.77a3.65,3.65,0,0,1,3.75,3.5v15.4A3.79,3.79,0,0,1,153.77,280.64Z"/>
+  <text class="svgtext6" transform="translate(47.51 273.72)">Diego and Frida</text>
+  <path class="path7 cls-18" d="M153.73,361.64H35.1a3.67,3.67,0,0,1-3.79-3.5v-4.8l-8.68-2.4c2.89-1.1,5.79-2.3,8.68-3.4v-4.8a3.67,3.67,0,0,1,3.79-3.5H153.73a3.68,3.68,0,0,1,3.79,3.5v15.4A3.81,3.81,0,0,1,153.73,361.64Z"/>
+  <text class="svgtext7" transform="translate(46.17 354.72)">first solo exhibit</text>
+  <path class="path8 cls-20" d="M196.75,393.44H39.18c-2.78,0-5-1.6-5-3.5v-4.8l-11.52-2.4c3.84-1.1,7.68-2.3,11.52-3.4v-4.8c0-1.9,2.25-3.5,5-3.5H196.75c2.78,0,5,1.6,5,3.5v15.4C201.65,391.84,199.4,393.44,196.75,393.44Z"/>
+  <text class="svgtext8" transform="translate(46.17 386.52)">divorce and remarriage</text>
+  <path class="path9 cls-24" d="M88.17,448.24H28.38c-1.06,0-1.91-1.6-1.91-3.5v-4.8l-4.37-2.4c1.46-1.1,2.91-2.3,4.37-3.4v-4.8c0-1.9.85-3.5,1.91-3.5H88.17c1,0,1.9,1.6,1.9,3.5v15.4C90,446.64,89.17,448.24,88.17,448.24Z"/>
+  <text class="svgtext9" transform="translate(42.34 441.32)">diary</text>
+  <path class="path0 cls-25" d="M98.14,565.24h-68c-1.2,0-2.17-1.6-2.17-3.5v-4.8l-5-2.4c1.66-1.1,3.32-2.3,5-3.4v-4.8c0-1.9,1-3.5,2.17-3.5h68c1.2,0,2.17,1.6,2.17,3.5v15.4C100.25,563.64,99.28,565.24,98.14,565.24Z"/>
+  <text class="svgtext0" transform="translate(46.17 558.32)">death</text>
+</svg>

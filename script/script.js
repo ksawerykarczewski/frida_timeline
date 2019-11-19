@@ -11,7 +11,7 @@ let counter = 1;
 const modal = document.querySelector(".modal-bg");
 const modalUl = document.querySelector(".modal-content ul");
 
-fetch("../timeline.svg")
+fetch("../timeline with tooltip.svg")
   .then(e => e.text())
   .then(data => loadSVG(data));
 
@@ -39,6 +39,8 @@ function displayEvent(oneEvent) {
   clone.querySelector(".point_img").src = "../imgs/" + oneEvent.gsx$image.$t;
   clone.querySelector(".painting").src = "../imgs/" + oneEvent.gsx$painting.$t;
   clone.querySelector(".quote").textContent = oneEvent.gsx$quote.$t;
+  document.querySelector(".svgtext" + counter).textContent = oneEvent.gsx$heading.$t;
+
   // clone.querySelector("video source").src = "video/" + oneEvent.gsx$video.$t;
   const newLi = document.createElement("li");
   const newDiv = document.createElement("div");
@@ -67,13 +69,56 @@ function displayEvent(oneEvent) {
 
 function main() {
   const elms = document.querySelectorAll("section");
-  const date = document.querySelector("#date_vertical");
+  const date = document.querySelector("#date_vertical h1");
 
   const config = {
     root: null, //document.querySelector('#some-element')
     rootMargin: "0px",
-    threshold: [0, 0.5, 0.75, 1]
+    threshold: [0, 0.01, 0.3, 0.31, 0.49, 0.5, 0.75, 1]
   };
+
+  // let observer = new IntersectionObserver(entries => {
+  //   entries.forEach(entry => {
+  //     let lastChar = entry.target.id[entry.target.id.length - 1];
+  //     let currentDate = entry.target.querySelector(".date").textContent;
+  //     let currentYear = currentDate.substring(currentDate.length - 4);
+  //     if (entry.intersectionRatio > 0) {
+  //       document.querySelector("#category" + lastChar).style.textDecoration =
+  //         "underline";
+  //       // entry.target.classList.add("focus");
+  //       document.querySelector("#circle" + lastChar).style.fill = "black";
+  //     } else {
+  //       document.querySelector("#category" + lastChar).style.textDecoration =
+  //         "none";
+  //       // entry.target.classList.remove("focus");
+  //       document.querySelector("#circle" + lastChar).style.fill =
+  //         "var(--main-bg-color)";
+  //     }
+  //     //code from stack overflow https://stackoverflow.com/questions/31223341/detecting-scroll-direction
+  //     window.onscroll = function(e) {
+  //       if (this.oldScroll < this.scrollY) {
+  //         if (date.innerHTML < currentYear) {
+  //           date.classList.add("year-animation");
+  //           date.addEventListener("animationend", () => {
+  //             date.innerHTML = currentYear;
+  //             // date.classList.add("year-animationback");
+  //             date.classList.remove("year-animation");
+  //           });
+  //         }
+  //       } else if (this.oldScroll > this.scrollY) {
+  //         if (date.innerHTML > currentYear) {
+  //           date.classList.add("year-animation");
+  //           date.addEventListener("animationend", () => {
+  //             date.innerHTML = currentYear;
+  //             // date.classList.add("year-animationback");
+  //             date.classList.remove("year-animation");
+  //           });
+  //         }
+  //       }
+  //       this.oldScroll = this.scrollY;
+  //     };
+  //   });
+  // }, config);
 
   let observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -81,16 +126,39 @@ function main() {
       let currentDate = entry.target.querySelector(".date").textContent;
       let currentYear = currentDate.substring(currentDate.length - 4);
       if (entry.intersectionRatio > 0) {
+        if (entry.target.id == "section1" && entry.intersectionRatio > 0.3) {
+          document.querySelector(".SVG_timeline").classList.add("opacity-animation");
+        }
         document.querySelector("#category" + lastChar).style.textDecoration = "underline";
-        // entry.target.classList.add("focus");
         document.querySelector("#circle" + lastChar).style.fill = "black";
-        date.innerHTML = currentYear;
+
+        //code from stack overflow https://stackoverflow.com/questions/31223341/detecting-scroll-direction
+        window.onscroll = function(e) {
+          if (this.oldScroll < this.scrollY) {
+            if (date.innerHTML < currentYear) {
+              date.classList.add("year-animation");
+              date.addEventListener("animationend", () => {
+                date.innerHTML = currentYear;
+                // date.classList.add("year-animationback");
+                date.classList.remove("year-animation");
+              });
+            }
+          } else if (this.oldScroll > this.scrollY) {
+            if (date.innerHTML > currentYear) {
+              date.classList.add("year-animation");
+              date.addEventListener("animationend", () => {
+                date.innerHTML = currentYear;
+                // date.classList.add("year-animationback");
+                date.classList.remove("year-animation");
+              });
+            }
+          }
+          this.oldScroll = this.scrollY;
+        };
       } else {
         document.querySelector("#category" + lastChar).style.textDecoration = "none";
-        // entry.target.classList.remove("focus");
         document.querySelector("#circle" + lastChar).style.fill = "var(--main-bg-color)";
       }
-      // console.log(entry.intersectionRatio);
     });
   }, config);
 
@@ -101,7 +169,21 @@ function main() {
   let circles = document.querySelectorAll("circle");
   circles.forEach(circle => {
     circle.addEventListener("click", scrollToSection);
+    circle.addEventListener("mouseenter", showTooltip);
+    circle.addEventListener("mouseleave", hideTooltip);
   });
+
+  function showTooltip(e) {
+    let id = e.target.id[e.target.id.length - 1];
+    document.querySelector(".svgtext" + id).style.display = "block";
+    document.querySelector(".path" + id).style.display = "block";
+  }
+
+  function hideTooltip(e) {
+    let id = e.target.id[e.target.id.length - 1];
+    document.querySelector(".svgtext" + id).style.display = "none";
+    document.querySelector(".path" + id).style.display = "none";
+  }
 
   function scrollToSection(e) {
     if (!modal.classList.contains("hide")) {
