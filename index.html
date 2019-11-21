@@ -28,20 +28,76 @@
     <template>
       <section class="point_section">
         <h1></h1>
-        <h2 class="date"></h2>
+        <span class="date underline"></span>
+
         <div class="text">
           <p></p>
         </div>
-        <figure>
+        <!-- <figure data-aos="fade-in">
           <img class="point_img" src="" />
+          <figcaption class="point_img_caption"></figcaption>
+        </figure> -->
+        <figure class="imagedoodle">
+          <figcaption class="point_img_caption"></figcaption>
+          <img class="point_img" src="" />
+          <div class="doodle squiggle"></div>
+
+          <svg display="none">
+            <filter id="turbulence-1">
+              <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-2">
+              <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-3">
+              <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-4">
+              <feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-5">
+              <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-6">
+              <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-7">
+              <feTurbulence type="fractalNoise" baseFrequency="0.007" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-8">
+              <feTurbulence type="fractalNoise" baseFrequency="0.0014" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-9">
+              <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+
+            <filter id="turbulence-10">
+              <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" data-filterId="3" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+            </filter>
+          </svg>
         </figure>
-        <figure>
+        <figure data-aos="fade-in">
           <img class="painting" src="" />
+          <figcaption class="painting_caption"></figcaption>
         </figure>
-        <!-- <video class="animated_painting" width="320" height="240" playisline autoplay loop muted>
-          <source src="" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> -->
         <div class="text2">
           <p></p>
         </div>
@@ -52,9 +108,13 @@
     <main>
       <div class="hero">
         <div class="hero-inner"></div>
-        <h1>Life of Frida</h1>
-        <!-- <div id="grave"></div> -->
+        <div class="hero-inner-text" data-aos="fade-down">
+          <h1>Frida Kahlo</h1>
+          <h2>The life and times</h2>
+        </div>
+        <div class="scroll-down"></div>
       </div>
+      <div id="grave"></div>
     </main>
 
     <div class="modal-bg hide">
