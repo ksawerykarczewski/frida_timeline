@@ -1,0 +1,25 @@
+{
+  "name": "frida_timeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify-js": "minify script/script.js > dist/script.min.js",
+    "minify-html": "minify index.html > dist/index.min.html",
+    "minify-css": "minify css/style.css > dist/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksawerykarczewski/frida_timeline.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksawerykarczewski/frida_timeline/issues"
+  },
+  "homepage": "https://github.com/ksawerykarczewski/frida_timeline#readme",
+  "devDependencies": {
+    "minify": "^4.1.3"
+  }
+}

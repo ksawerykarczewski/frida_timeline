@@ -226,15 +226,6 @@ let burger_animation = lottie.loadAnimation({
   autoplay: false,
   path: "data_menu.json" // the path to the animation json
 });
-
-// let grave_animation = lottie.loadAnimation({
-//   container: document.querySelector("#grave"), // the dom element that will contain the animation
-//   renderer: "svg",
-//   loop: true,
-//   autoplay: true,
-//   path: "grave.json" // the path to the animation json
-// });
-
 burger_animation.setSpeed(2.1);
 
 // FADE IN ANIMATION
